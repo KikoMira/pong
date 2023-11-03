@@ -51,7 +51,7 @@ while True:
     if ball_pos[1] <= 0 or ball_pos[1] >= HEIGHT - BALL_SIZE:
         ball_vel[1] = -ball_vel[1]
 
-    screen.fill(WHITE)
+    screen.fill((0, 0, 0))
 
     pygame.draw.rect(screen, WHITE, pygame.Rect(left_paddle_pos, (PADDLE_WIDTH, PADDLE_HEIGHT)))
     pygame.draw.rect(screen, WHITE, pygame.Rect(right_paddle_pos, (PADDLE_WIDTH, PADDLE_HEIGHT)))
